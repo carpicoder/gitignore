@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+*::-moz-selection {
+  background-color: black;
+  color: #45eb3f;
+}
+*::selection {
+  background-color: black;
+  color: #45eb3f;
+}
+
+header {
+  background-color: #45eb3f;
+  display: flex;
+  gap: 20px;
+  grid-gap: 20px;
+}
+header .logo {
+  width: 100px;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+}
+header .navbar .menu {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  grid-gap: 10px;
+}
+header .navbar .menu .menu__item a {
+  background: white;
+  border: 5px solid white;
+  color: #45eb3f;
+  text-decoration: none;
+  padding: 1rem;
+}
+header .navbar .menu .menu__item a:hover {
+  background: #45eb3f;
+  color: white;
+}
+header .navbar .menu .menu__item.active a {
+  background: #269722;
+  border-color: #269722;
+  color: white;
+}
+
+.imagenPrincipal {
+  height: 80vh;
+  background-image: url("../img/paisaje.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 200px;
+}
+.imagenPrincipal h2 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.596);
+  padding-inline: 15px;
+}
+.imagenPrincipal h2::first-letter {
+  color: #45eb3f;
+}
+.imagenPrincipal h2::-moz-selection {
+  background: #45eb3f;
+  color: black;
+}
+.imagenPrincipal h2::selection {
+  background: #45eb3f;
+  color: black;
+}
+.imagenPrincipal p {
+  color: white;
+  text-align: center;
+}
+.imagenPrincipal p::first-line {
+  color: #45eb3f;
+}
+.imagenPrincipal p::-moz-selection {
+  background: black;
+  color: #45eb3f;
+}
+.imagenPrincipal p::selection {
+  background: black;
+  color: #45eb3f;
+}
+
+.tarjetitas {
+  padding: 60px;
+  display: flex;
+  gap: 30px;
+}
+.tarjetitas .tarjetita {
+  background-color: #45eb3f;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.tarjetitas .tarjetita .informacion {
+  padding: 0 20px 20px 20px;
+}
+.tarjetitas .tarjetita .tarjetita__imagen {
+  max-width: 100%;
+}
+.tarjetitas .tarjetita.tarjetitados {
+  flex: 1.5;
+}
+
+.pie {
+  background-color: #45eb3f;
+  color: white;
+  padding-block: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=estilo.css.map */

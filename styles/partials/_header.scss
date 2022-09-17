@@ -1,0 +1,48 @@
+header {
+    background-color: $mainColor;
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+
+    .logo {
+        width: 100px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+
+        .menu {
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            grid-gap: 10px;
+
+            .menu__item {
+
+                a {
+                    background: white;
+                    border: 5px solid white;
+                    color: $mainColor;
+                    text-decoration: none;
+                    padding: 1rem;
+
+                    &:hover {
+                        background: $mainColor;
+                        color: white;
+                    }
+                }
+
+                &.active {
+
+                    a {
+                        background: $secondaryColor;
+                        border-color: $secondaryColor;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+

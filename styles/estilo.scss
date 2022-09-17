@@ -1,0 +1,10 @@
+@import "./partials/variables"; // Siempre arriba de todo
+
+@import "./partials/reset"; // Siempre debajo de las variables y arriba del resto
+
+@import "./partials/header";
+@import "./partials/hero";
+@import "./partials/tarjetitas";
+@import "./partials/footer";
+
+// Media queries irían abajo de todo

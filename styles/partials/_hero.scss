@@ -1,0 +1,41 @@
+.imagenPrincipal {
+    height: 80vh;
+    background-image: url("../img/paisaje.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+
+    h2 {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.596);
+        padding-inline: 15px;
+
+        &::first-letter {
+            color: $mainColor;
+        }
+
+        &::selection {
+            background: $mainColor;
+            color: black;
+        }
+    }
+
+    p {
+        color: white;
+        text-align: center;
+
+        &::first-line {
+            color: $mainColor;
+        }
+
+        &::selection {
+            background: black;
+            color: $mainColor;
+        }
+    }
+}
